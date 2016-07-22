@@ -107,7 +107,7 @@ class Connection(object):
     def list_batch_subscribe(self,
                              id,
                              batch,
-                             double_optin=True,
+                             double_optin=False,
                              update_existing=False,
                              replace_interests=False):
 
@@ -137,7 +137,7 @@ class Connection(object):
                        email_address,
                        merge_vars,
                        email_type='text',
-                       double_optin=True,
+                       double_optin=False,
                        update_existing=False,
                        replace_interests=True,
                        send_welcome=False):
